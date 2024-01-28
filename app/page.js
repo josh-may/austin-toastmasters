@@ -15,7 +15,7 @@ export default function Home() {
 
       <Navbar />
 
-      <main className="flex flex-1 flex-col  items-center justify-center rounded-md ">
+      <main className="flex flex-1 flex-col  items-center justify-center rounded-md max-w-3xl">
         <div className="mb-7">
           <h1 className=" mb-1  mt-[45px] text-center text-4xl font-bold ">
             Welcome to Austin Toastmasters!
@@ -50,6 +50,26 @@ export default function Home() {
           </p>
           <p className="text-lg leading-7 text-[#FFF8EE] ">
             Time: Friday 7:30 am - 8:30 am
+          </p>
+        </div>
+
+        <p className="text-left w-full font-bold mb-1 mt-10">
+          WHAT IS TOASTMASTERS?
+        </p>
+        <div className=" w-full border p-3">
+          <p className="text-lg leading-7 text-[#FFF8EE]">
+            Toastmasters International is a nonprofit educational organization
+            that builds confidence and teaches public speaking skills through a
+            worldwide network of clubs that meet online and in person. <br />
+            <br /> In a supportive community or corporate environment, members
+            prepare and deliver speeches, respond to impromptu questions, and
+            give and receive constructive feedback. <br />
+            <br /> It is through this regular practice that members are
+            empowered to meet personal and professional communication goals.
+            <br />
+            <br /> Founded in 1924, the organization is headquartered in
+            Englewood, Colorado with approximately 270,000 members in more than
+            14,200 clubs in 148 countries.
           </p>
         </div>
       </main>
