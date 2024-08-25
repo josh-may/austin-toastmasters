@@ -12,12 +12,27 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center">
       <Head>
-        <title>Austin Toastmasters - ATX Speech Garage</title>
+        <title>Austin Toastmasters - Improve Your Public Speaking Skills</title>
         <meta
           name="description"
-          content="A place where normies practice public speaking."
+          content="Join Austin Toastmasters at ATX Speech Garage to enhance your public speaking and leadership skills. Weekly meetings in East Austin. Drop-ins welcome!"
         />
         <link rel="icon" href="/favicon.ico" />
+
+        <meta
+          property="og:title"
+          content="Austin Toastmasters - Improve Public Speaking Skills | ATX Speech Garage"
+        />
+        <meta
+          property="og:description"
+          content="Join Austin Toastmasters at ATX Speech Garage to enhance your public speaking and leadership skills. Weekly meetings in East Austin. Drop-ins welcome!"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://austintoastmasters.com" />
+        <meta
+          property="og:image"
+          content="https://austintoastmasters.com/tm2.png"
+        />
       </Head>
 
       <header className="w-full bg-black border-b border-gray-400 p-4 py-4 flex justify-between items-center">
