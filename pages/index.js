@@ -152,7 +152,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
-                ATX Speech Garage
+                Speech Garage
               </a>
             </p>
             <p className="text-lg mb-4">
