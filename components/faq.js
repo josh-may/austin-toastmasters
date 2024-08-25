@@ -24,7 +24,7 @@ const FAQ = () => {
     {
       question: "What is a typical toastmasters meeting?",
       answer:
-        "Time is important so please always arrive on time before 6:15pm. The daily agenda will be passed out on the tables. You will also find a blank form where you can provide feedback to the speakers. We encourage guests to provide feedback to all speakers! The Toastmaster runs the show and will go over the other key roles that make this club great. There will be 3-4 prepared speeches, table topics, 3-4 evaluators.",
+        "Time is important so please always arrive on time before 2:30pm. The daily agenda will be passed out on the tables. You will also find a blank form where you can provide feedback to the speakers. We encourage guests to provide feedback to all speakers! The Toastmaster runs the show and will go over the other key roles that make this club great. There will be 3-4 prepared speeches, table topics, 3-4 evaluators.",
     },
     {
       question: "How do I become a member?",
