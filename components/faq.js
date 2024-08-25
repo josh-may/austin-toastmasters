@@ -1,9 +1,11 @@
 import React from "react";
 
 const FAQItem = ({ question, answer }) => (
-  <div className="mb-6">
-    <h3 className="font-bold text-2xl text-gray-100">{question}</h3>
-    <p className="text-lg">{answer}</p>
+  <div className="mb-4 sm:mb-6">
+    <h3 className="font-bold text-lg sm:text-xl md:text-2xl text-gray-100">
+      {question}
+    </h3>
+    <p className="text-base sm:text-lg">{answer}</p>
   </div>
 );
 
@@ -80,8 +82,8 @@ const FAQ = () => {
 
   return (
     <section className="w-full">
-      <div className="border-gray-400 border p-6 shadow-md">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-200">
+      <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
           FAQS
         </h2>
         {faqItems.map((item, index) => (

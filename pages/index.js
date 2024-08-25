@@ -3,9 +3,11 @@ import FAQ from "../components/faq";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -30,7 +32,7 @@ export default function Home() {
             Austin Toastmasters
           </Link>
         </div>
-        <nav className="text-xl">
+        <nav className="hidden md:block text-xl">
           <ul className="flex items-center space-x-9 mr-4">
             <li>
               <a
@@ -66,19 +68,65 @@ export default function Home() {
             </li>
           </ul>
         </nav>
+        <div className="md:hidden">
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="text-white"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </header>
+      {mobileMenuOpen && (
+        <nav className="md:hidden bg-black text-white p-4">
+          <ul className="space-y-4">
+            <li>
+              <a
+                href="#meeting-info"
+                className="text-white hover:text-gray-300 transition-colors"
+              >
+                Meeting Info
+              </a>
+            </li>
+            <li>
+              <a
+                href="#faq"
+                className="text-white hover:text-gray-300 transition-colors"
+              >
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                className="text-white hover:text-gray-300 transition-colors"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="text-white hover:text-gray-300 transition-colors cursor-pointer"
+              >
+                Contact
+              </button>
+            </li>
+          </ul>
+        </nav>
+      )}
 
-      <main className="flex flex-col items-center justify-center px-4 py-12 max-w-4xl mx-auto bg-black text-gray-200">
-        <h1 className="text-5xl md:text-7xl font-bold text-center mt-5 mb-12 text-gray-200">
+      <main className="flex flex-col items-center justify-center px-4 py-8 sm:py-12 max-w-4xl mx-auto bg-black text-gray-200">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-center mt-5 mb-8 sm:mb-12 text-gray-200">
           Welcome to Austin Toastmasters 😎
-          <p className="text-2xl md:text-4xl font-semi text-center mt-4 text-green-500">
+          <p className="text-xl sm:text-2xl md:text-4xl font-semibold text-center mt-4 text-green-500">
             (Drop ins welcome)
           </p>
         </h1>
 
         <section id="meeting-info" className="w-full mb-6">
-          <div className="border-gray-400 border p-6  shadow-md">
-            <h2 className="text-2xl  md:text-3xl font-bold mb-6 text-gray-200">
+          <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
               MEETING INFO
             </h2>
             <p className="text-lg mb-4">
@@ -111,12 +159,12 @@ export default function Home() {
         </section>
 
         <section id="about" className="w-full mb-6">
-          <div className="border-gray-400 border p-6 shadow-md flex flex-col items-center">
+          <div className="border-gray-400 border p-4 sm:p-6 shadow-md flex flex-col items-center">
             <div className="w-full">
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-200">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
                 ABOUT
               </h2>
-              <p className="text-lg mb-4">
+              <p className="text-base sm:text-lg mb-4">
                 Hey, my name is Josh. I started going to Toastmasters in 2018. I
                 used to have a speech impediment that I worked through by going
                 to Toastmasters. And now I run this little club in East Ausitn.
@@ -129,31 +177,33 @@ export default function Home() {
                 alt="Josh's profile picture"
                 width={300}
                 height={450}
-                className="rounded-lg shadow-md mx-auto"
+                className="rounded-lg shadow-md mx-auto max-w-full h-auto"
               />
             </div>
           </div>
         </section>
 
-        <section id="faq" className="w-full mb-6">
+        <section id="faq" className="w-full mb-6 px-4 sm:px-0">
           <FAQ />
         </section>
       </main>
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 sm:p-0"
           onClick={() => setIsModalOpen(false)}
         >
           <div
-            className="bg-black border-gray-400 border p-10 rounded-xl shadow-2xl max-w-2xl w-full"
+            className="bg-black border-gray-400 border p-6 sm:p-10 rounded-xl shadow-2xl w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <h2 className="text-3xl font-bold mb-8 text-white">Contact Us</h2>
-            <p className="mb-8 text-gray-300 text-xl">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-8 text-white">
+              Contact Us
+            </h2>
+            <p className="mb-4 sm:mb-8 text-gray-300 text-lg sm:text-xl">
               Email:{" "}
               <a
                 href="mailto:hey@joshmay.xyz"
-                className="text-blue-400 hover:underline"
+                className="text-blue-400 hover:underline break-all"
               >
                 hey@joshmay.xyz
               </a>
