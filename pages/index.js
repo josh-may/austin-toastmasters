@@ -166,9 +166,9 @@ export default function Home() {
               </h2>
               <p className="text-base sm:text-lg mb-4">
                 Hey, my name is Josh. I started going to Toastmasters in 2018. I
-                used to have a speech impediment that I worked through by going
-                to Toastmasters. And now I run this little club in East Ausitn.
-                Come check us out. :)
+                used to have a self esteem crippling speech impediment that I
+                worked through from going to Toastmasters. And now I run this
+                little club in East Ausitn. Come check us out. :)
               </p>
             </div>
             <div className="w-full mb-6">
@@ -186,6 +186,17 @@ export default function Home() {
         <section id="faq" className="w-full mb-6 px-4 sm:px-0">
           <FAQ />
         </section>
+        <footer className="w-full text-center  mt-12 text-gray-400 text-lg">
+          🦄💨 Built by{" "}
+          <a
+            href="https://joshmay.xyz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-300 transition-colors"
+          >
+            Josh May
+          </a>
+        </footer>
       </main>
       {isModalOpen && (
         <div
