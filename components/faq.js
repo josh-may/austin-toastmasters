@@ -19,7 +19,7 @@ const FAQ = () => {
     {
       question: "How much does a membership cost?",
       answer:
-        "Currently, the cost is $60 every 6 months but subject to change. If you have special considerations, just ask the Vice President of Membership.",
+        "You can attend our meetings for free as long as you want and even participate in table topics (impromptu speech) without being a member. However, if you'd like to give prepared speeches, you'll need to become a member. Currently, the membership cost is $60 every 6 months, but this is subject to change. If you have special considerations, please ask the Vice President of Membership.",
     },
     {
       question: "What is a typical toastmasters meeting?",

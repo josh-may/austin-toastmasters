@@ -198,7 +198,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="faq" className="w-full mb-6 px-4 sm:px-0">
+        <section id="faq" className="w-full mb-6">
           <FAQ />
         </section>
         <footer className="w-full text-center  mt-12 text-gray-400 text-lg">
