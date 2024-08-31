@@ -181,9 +181,9 @@ export default function Home() {
               </h2>
               <p className="text-base sm:text-lg mb-4">
                 Hey, my name is Josh. I started going to Toastmasters in 2018. I
-                used to have a self esteem crippling speech impediment that I
-                worked through from going to Toastmasters. And now I run this
-                little club in East Ausitn. Come check us out. :)
+                used to have a speech impediment that I worked through from
+                going to Toastmasters. And now I run this little club in East
+                Ausitn. Come check us out. :)
               </p>
             </div>
             <div className="w-full mb-6">
