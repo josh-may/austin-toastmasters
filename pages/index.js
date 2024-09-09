@@ -190,8 +190,8 @@ export default function Home() {
               <Image
                 src="/profile.jpg"
                 alt="Josh's profile picture"
-                width={300}
-                height={450}
+                width={600}
+                height={900}
                 className="rounded-lg shadow-md mx-auto max-w-full h-auto"
               />
             </div>
