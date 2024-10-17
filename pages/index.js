@@ -158,12 +158,12 @@ export default function Home() {
             <p className="text-lg mb-4">
               <strong className="text-gray-100">Location:</strong>{" "}
               <a
-                href="https://www.google.com/maps/dir//google+maps+2823+E+MLK+Jr.+Blvd,+Austin+TX/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8644b5e8e5441f29:0x12af097b1c42ba15?sa=X&ved=1t:3061&ictx=111"
+                href="https://www.google.com/maps?s=web&lqi=ChBob3VuZHN0b290aCBjYWZlIgOIAQFIqqyVz6qvgIAIWhoQABABGAAYASIQaG91bmRzdG9vdGggY2FmZZIBC2NvZmZlZV9zaG9wqgFPEAEqFCIQaG91bmRzdG9vdGggY2FmZSgAMh8QASIb38m-92Vgn3XlNEaL2NYQSqb3bw4IVlLATpZEMhQQAiIQaG91bmRzdG9vdGggY2FmZeABAA&vet=12ahUKEwj9-9SNt5WJAxWMl-4BHSFbPMoQ1YkKegQILRAB..i&cs=1&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KSkfROXotUSGMdpiI_8pTDhV&daddr=2823+East+MLK+Blvd,+2823+E+Martin+Luther+King+Jr+Blvd+%23101,+Austin,+TX+78702"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
-                2823 E MLK Jr. Blvd, Austin TX
+                Houndstooth Coffee on MLK
               </a>
             </p>
             <p className="text-lg">
@@ -202,7 +202,7 @@ export default function Home() {
           <FAQ />
         </section>
         <footer className="w-full text-center  mt-12 text-gray-400 text-lg">
-          🦄💨 Built by{" "}
+          🦄 Built by{" "}
           <a
             href="https://joshmay.xyz"
             target="_blank"
