@@ -152,7 +152,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
-                Speech Garage
+                The Speech Garage
               </a>
             </p>
             <p className="text-lg mb-4">
@@ -167,8 +167,8 @@ export default function Home() {
               </a>
             </p>
             <p className="text-lg">
-              <strong className="text-gray-100">Time:</strong> Saturday 1:00 pm
-              - 2:00 pm
+              <strong className="text-gray-100">Time:</strong> Monday 6:15 pm -
+              7:15 pm
             </p>
           </div>
         </section>
@@ -204,7 +204,7 @@ export default function Home() {
         <footer className="w-full text-center  mt-12 text-gray-400 text-lg">
           🦄 Built by{" "}
           <a
-            href="https://joshmay.xyz"
+            href="https://joshmmay.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-gray-300 transition-colors"
@@ -228,10 +228,10 @@ export default function Home() {
             <p className="mb-4 sm:mb-8 text-gray-300 text-lg sm:text-xl">
               Email:{" "}
               <a
-                href="mailto:hey@joshmay.xyz"
+                href="mailto:hey@joshmmay.com"
                 className="text-blue-400 hover:underline break-all"
               >
-                hey@joshmay.xyz
+                hey@joshmmay.com
               </a>
             </p>
           </div>

@@ -60,10 +60,10 @@ export default function Header() {
             <p className="mb-8 text-gray-300 text-xl">
               Email:{" "}
               <a
-                href="mailto:hey@joshmay.xyz"
+                href="mailto:hey@joshmmay.com"
                 className="text-blue-400 hover:underline"
               >
-                hey@joshmay.xyz
+                hey@joshmmay.com
               </a>
             </p>
           </div>
