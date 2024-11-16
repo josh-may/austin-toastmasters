@@ -158,12 +158,12 @@ export default function Home() {
             <p className="text-lg mb-4">
               <strong className="text-gray-100">Location:</strong>{" "}
               <a
-                href="https://www.google.com/maps?s=web&lqi=ChBob3VuZHN0b290aCBjYWZlIgOIAQFIqqyVz6qvgIAIWhoQABABGAAYASIQaG91bmRzdG9vdGggY2FmZZIBC2NvZmZlZV9zaG9wqgFPEAEqFCIQaG91bmRzdG9vdGggY2FmZSgAMh8QASIb38m-92Vgn3XlNEaL2NYQSqb3bw4IVlLATpZEMhQQAiIQaG91bmRzdG9vdGggY2FmZeABAA&vet=12ahUKEwj9-9SNt5WJAxWMl-4BHSFbPMoQ1YkKegQILRAB..i&cs=1&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KSkfROXotUSGMdpiI_8pTDhV&daddr=2823+East+MLK+Blvd,+2823+E+Martin+Luther+King+Jr+Blvd+%23101,+Austin,+TX+78702"
+                href="https://maps.app.goo.gl/wb32DYcQVcUsWZRV9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
-                Houndstooth Coffee on MLK
+                Civil Goat on Manor
               </a>
             </p>
             <p className="text-lg">
