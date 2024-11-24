@@ -167,7 +167,7 @@ export default function Home() {
               </a>
             </p>
             <p className="text-lg">
-              <strong className="text-gray-100">Time:</strong> Monday 6:15 pm -
+              <strong className="text-gray-100">Time:</strong> Tuesday 6:15 pm -
               7:15 pm
             </p>
           </div>
