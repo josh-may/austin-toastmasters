@@ -234,6 +234,15 @@ export default function Home() {
                 hey@joshmmay.com
               </a>
             </p>
+            <p className="mb-4 sm:mb-8 text-gray-300 text-lg sm:text-xl">
+              Phone:{" "}
+              <a
+                href="tel:774-275-4205"
+                className="text-blue-400 hover:underline"
+              >
+                774-275-4205
+              </a>
+            </p>
           </div>
         </div>
       )}
