@@ -3,7 +3,7 @@ import FAQ from "../components/faq";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, Instagram } from "lucide-react";
+import { Menu, X, Instagram, Twitter } from "lucide-react";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -211,7 +211,7 @@ export default function Home() {
           >
             Josh May
           </a>
-          <div className="mt-4 flex justify-center">
+          <div className="mt-4 flex justify-center space-x-4">
             <a
               href="https://www.instagram.com/austin_toastmasters/"
               target="_blank"
@@ -220,6 +220,15 @@ export default function Home() {
               aria-label="Follow us on Instagram"
             >
               <Instagram size={24} />
+            </a>
+            <a
+              href="https://x.com/atxtoastmasters"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300 transition-colors"
+              aria-label="Follow us on X (Twitter)"
+            >
+              <Twitter size={24} />
             </a>
           </div>
         </footer>
