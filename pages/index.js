@@ -201,34 +201,36 @@ export default function Home() {
         <section id="faq" className="w-full mb-6">
           <FAQ />
         </section>
-        <footer className="w-full text-center  mt-12 text-gray-400 text-lg">
-          🦄 Built by{" "}
-          <a
-            href="https://joshmmay.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-gray-300 transition-colors"
-          >
-            Josh May
-          </a>
-          <div className="mt-4 flex justify-center space-x-4">
+        <footer className="w-full py-3 text-center text-gray-400">
+          <div className="flex justify-center space-x-6 mb-4 mt-6">
             <a
               href="https://www.instagram.com/austin_toastmasters/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-300 transition-colors"
+              className="text-gray-400 hover:text-white transition-colors"
               aria-label="Follow us on Instagram"
             >
-              <Instagram size={24} />
+              <Instagram size={20} />
             </a>
             <a
               href="https://x.com/atxtoastmasters"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-300 transition-colors"
+              className="text-gray-400 hover:text-white transition-colors"
               aria-label="Follow us on X (Twitter)"
             >
-              <Twitter size={24} />
+              <Twitter size={20} />
+            </a>
+          </div>
+          <div className="text-sm">
+            Built by{" "}
+            <a
+              href="https://joshmmay.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              Josh May
             </a>
           </div>
         </footer>
