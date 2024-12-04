@@ -3,7 +3,7 @@ import FAQ from "../components/faq";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, Instagram, Twitter } from "lucide-react";
+import { Menu, X, Instagram, Twitter, Facebook } from "lucide-react";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -211,6 +211,15 @@ export default function Home() {
               aria-label="Follow us on Instagram"
             >
               <Instagram size={20} />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61570084196984"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+              aria-label="Follow us on Facebook"
+            >
+              <Facebook size={20} />
             </a>
             <a
               href="https://x.com/atxtoastmasters"
