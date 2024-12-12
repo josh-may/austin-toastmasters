@@ -129,11 +129,11 @@ export default function Home() {
             </div>
           </nav>
         )}
-        <section className="w-full mb-6">
-          <div className="border-gray-400 border p-6 sm:p-8 shadow-md">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-center mt-6 mb-10 sm:mb-10 text-gray-200">
+        <section className="w-full mb-4 sm:mb-6">
+          <div className="border-gray-400 border p-4 sm:p-6 md:p-8 shadow-md">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mt-6 mb-6 sm:mb-10 text-gray-200">
               Welcome to Austin Toastmasters 😎
-              <p className="text-2xl sm:text-3xl md:text-5xl font-semibold text-center mt-5 text-green-500">
+              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center mt-4 sm:mt-5 text-green-500">
                 (Drop ins welcome)
               </p>
             </h1>
@@ -327,13 +327,13 @@ export default function Home() {
           onClick={() => setIsModalOpen(false)}
         >
           <div
-            className="bg-black border-gray-400 border p-6 sm:p-10 rounded-xl shadow-2xl w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl"
+            className="bg-black border-gray-400 border p-4 sm:p-6 md:p-10 rounded-xl shadow-2xl w-full max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-2xl mx-4"
             onClick={(e) => e.stopPropagation()}
           >
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-8 text-white">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-8 text-white">
               Contact Us
             </h2>
-            <p className="mb-4 sm:mb-8 text-gray-300 text-lg sm:text-xl">
+            <p className="mb-4 sm:mb-8 text-gray-300 text-base sm:text-lg md:text-xl">
               Email:{" "}
               <a
                 href="mailto:hey@joshmmay.com"
@@ -342,7 +342,7 @@ export default function Home() {
                 hey@joshmmay.com
               </a>
             </p>
-            <p className="mb-4 sm:mb-8 text-gray-300 text-lg sm:text-xl">
+            <p className="mb-4 sm:mb-8 text-gray-300 text-base sm:text-lg md:text-xl">
               Phone (prefer text):{" "}
               <a
                 href="tel:774-275-4205"
