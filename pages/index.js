@@ -250,16 +250,18 @@ export default function Home() {
         <section id="about" className="w-full mb-6">
           <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
-              WHAT&apos;S THE STORY OF THIS GROUP?
+              WHAT&apos;S THE STORY OF THIS CLUB?
             </h2>
 
             <p className="text-base sm:text-lg mb-4">
-              This is a brand new club that started in 2024. I&apos;m Josh, the
-              founder, and I started this club because I saw a need for quality
-              public speaking groups in East Austin. My journey with
-              Toastmasters began when I was working through a stutter, and the
-              organization helped me overcome it. Now, I want to create that
-              same supportive environment for others in our community.
+              I started this club in 2024 after noticing a gap in East
+              Austin&apos;s public speaking community. I&apos;m Josh, and
+              I&apos;ve been involved with Toastmasters for the past 5 years. My
+              own journey began when I was working through a stutter that was
+              holding me back professionally. Toastmasters helped me overcome
+              that challenge, and now I&apos;m passionate about creating a
+              supportive space where others can face their own public speaking
+              fears and grow together. 😊
             </p>
             <div className="w-full mb-6">
               <Image
