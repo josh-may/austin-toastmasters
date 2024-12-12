@@ -243,17 +243,6 @@ export default function Home() {
               </a>
             </p>
             <p className="text-lg mb-4">
-              <strong className="text-gray-100">Club Name:</strong>{" "}
-              <a
-                href="https://www.toastmasters.org/Find-a-Club/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 underline"
-              >
-                Future Leaders
-              </a>
-            </p>
-            <p className="text-lg mb-4">
               <strong className="text-gray-100">Time:</strong> Tuesday 6:30 pm -
               7:30 pm
             </p>
@@ -281,6 +270,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+
         {/* New What is Toastmasters section */}
         <section className="w-full mb-6">
           <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
@@ -416,6 +406,16 @@ export default function Home() {
               aria-label="Follow us on X (Twitter)"
             >
               <Twitter size={20} />
+            </a>
+          </div>
+          <div className="text-sm mb-2">
+            <a
+              href="https://www.toastmasters.org/Find-a-Club/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              Future Leaders Club
             </a>
           </div>
           <div className="text-sm">
