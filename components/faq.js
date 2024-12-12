@@ -12,11 +12,6 @@ const FAQItem = ({ question, answer }) => (
 const FAQ = () => {
   const faqItems = [
     {
-      question: "What is Toastmasters?",
-      answer:
-        "Toastmasters International is a nonprofit educational organization that builds confidence and teaches public speaking skills through a worldwide network of clubs that meet online and in person. In a supportive environment, members prepare and deliver speeches, respond to impromptu questions, and give and receive constructive feedback. Founded in 1924, the organization is headquartered in Englewood, Colorado with approximately 270,000 members in more than 14,200 clubs in 148 countries.",
-    },
-    {
       question: "How much does a membership cost?",
       answer:
         "You can attend our meetings for free as long as you want and even participate in table topics (impromptu speech) without being a member. However, if you'd like to give prepared speeches, you'll need to become a member. Currently, the membership cost is $60 every 6 months, but this is subject to change. If you have special considerations, please ask the Vice President of Membership.",
@@ -24,7 +19,7 @@ const FAQ = () => {
     {
       question: "What is a typical toastmasters meeting?",
       answer:
-        "Time is important so please always arrive on time before 11:0am. The daily agenda will be passed out on the tables. You will also find a blank form where you can provide feedback to the speakers. We encourage guests to provide feedback to all speakers! The Toastmaster runs the show and will go over the other key roles that make this club great. There will be 3-4 prepared speeches, table topics, 3-4 evaluators.",
+        "Time is important so please always arrive on time before 6:30pm. The daily agenda will be passed out on the tables. You will also find a blank form where you can provide feedback to the speakers. We encourage guests to provide feedback to all speakers! The Toastmaster runs the show and will go over the other key roles that make this club great. There will be 3-4 prepared speeches, table topics, 3-4 evaluators.",
     },
     {
       question: "How do I become a member?",
