@@ -50,7 +50,7 @@ export default function Home() {
                     href="#meeting-info"
                     className="text-white hover:text-gray-300 transition-colors"
                   >
-                    Meeting Info
+                    Info
                   </a>
                 </li>
                 <li>
@@ -159,7 +159,7 @@ export default function Home() {
             <p className="text-lg mb-4">
               <strong className="text-gray-100">Location:</strong>{" "}
               <a
-                href="https://maps.app.goo.gl/wb32DYcQVcUsWZRV9"
+                href="https://maps.app.goo.gl/anexD6tD4arH76sa8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 underline"
