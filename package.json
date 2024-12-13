@@ -6,11 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "node sitemap.mjs"
   },
   "dependencies": {
+    "globby": "^14.0.2",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^0.435.0",
     "next": "14.2.6",
+    "next-mdx-remote": "^5.0.0",
     "react": "^18",
     "react-dom": "^18"
   },
