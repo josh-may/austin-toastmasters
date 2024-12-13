@@ -140,19 +140,19 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="#faq"
-                    className="text-white hover:text-gray-300 transition-colors"
-                  >
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a
                     href="#about"
                     className="text-white hover:text-gray-300 transition-colors"
                   >
                     About
                   </a>
+                </li>
+                <li>
+                  <Link
+                    href="/blog"
+                    className="text-white hover:text-gray-300 transition-colors"
+                  >
+                    Blog
+                  </Link>
                 </li>
                 <li>
                   <button
