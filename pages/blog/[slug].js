@@ -106,7 +106,7 @@ export default function BlogPost({ post }) {
               <div className="border border-gray-400 rounded-none p-5">
                 <div className="flex items-center mb-4">
                   <Image
-                    src="/featured-images/author.jpg"
+                    src="/author.jpg"
                     alt="Author's image"
                     width={64}
                     height={64}
@@ -129,7 +129,7 @@ export default function BlogPost({ post }) {
                 </p>
                 <div className="flex space-x-4">
                   <a
-                    href="https://www.joshmay.xyz/"
+                    href="https://www.joshmmay.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Personal Website"
