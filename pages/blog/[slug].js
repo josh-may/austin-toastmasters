@@ -123,9 +123,9 @@ export default function BlogPost({ post }) {
                   </div>
                 </div>
                 <p className="text-sm text-gray-400 mb-6">
-                  Hey I&apos;m Josh, one of the guys behind Show Notes
-                  Generator. I&apos;m passionate about technology, podcasting,
-                  and storytelling.
+                  Hey I&apos;m Josh, one of the guys behind Austin Toastmasters.
+                  I&apos;m passionate about technology, podcasting, and
+                  storytelling.
                 </p>
                 <div className="flex space-x-4">
                   <a
