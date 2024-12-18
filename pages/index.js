@@ -225,7 +225,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="meeting-info" className="w-full mb-6">
+        <section id="meeting-info" className="w-full mb-4">
           <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
               MEETING INFO
@@ -233,7 +233,7 @@ export default function Home() {
             <p className="text-lg mb-4">
               <strong className="text-gray-100">Location:</strong>{" "}
               <a
-                href="https://maps.app.goo.gl/anexD6tD4arH76sa8"
+                href="https://maps.app.goo.gl/ThhuBkGMZZx9wyAB8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 underline"
@@ -252,9 +252,12 @@ export default function Home() {
                 const nextTuesday = new Date();
                 const daysUntilTuesday = (2 - today.getDay() + 7) % 7;
                 nextTuesday.setDate(today.getDate() + daysUntilTuesday);
-                if (
-                  nextTuesday.getMonth() === 11 &&
-                  nextTuesday.getDate() === 26
+
+                while (
+                  (nextTuesday.getMonth() === 11 &&
+                    nextTuesday.getDate() === 24) ||
+                  (nextTuesday.getMonth() === 11 &&
+                    nextTuesday.getDate() === 31)
                 ) {
                   nextTuesday.setDate(nextTuesday.getDate() + 7);
                 }
@@ -270,8 +273,34 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Group Story section */}
+        <section id="about" className="w-full mb-4">
+          <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
+              WHAT&apos;S THE STORY OF THIS CLUB?
+            </h2>
+
+            <p className="text-base sm:text-lg mb-4">
+              Hey, Josh May here :). I started this club in August, 2024. I
+              noticed a gap in the East Austin area for public speaking and
+              wanted to address that.
+            </p>
+
+            <p className="text-base sm:text-lg mb-4">
+              I frist stared Toastmasters in 2018 to work through a stutter I
+              had that was limiting me professionaly. Doing toastmasters helped
+              me overcome that challenge, and now I&apos;m passionate about
+              creating a supportive space where others can face their own public
+              speaking fears and grow together. 😊
+            </p>
+            <p className="text-base sm:text-lg mb-4">
+              Come check out our club!
+            </p>
+          </div>
+        </section>
+
         {/* New What is Toastmasters section */}
-        <section className="w-full mb-6">
+        <section className="w-full mb-4">
           <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
               WHAT IS TOASTMASTERS?
@@ -299,7 +328,7 @@ export default function Home() {
         </section>
 
         {/* How are meetings run section */}
-        <section className="w-full mb-6">
+        <section className="w-full mb-4">
           <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
               HOW ARE MEETINGS RUN?
@@ -340,26 +369,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Group Story section */}
-        <section id="about" className="w-full mb-6">
-          <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
-              WHAT&apos;S THE STORY OF THIS CLUB?
-            </h2>
-
-            <p className="text-base sm:text-lg mb-4">
-              I started this club in 2024 after noticing a gap in East
-              Austin&apos;s public speaking community. I&apos;m Josh, and
-              I&apos;ve been involved with Toastmasters for the past 5 years. My
-              own journey began when I was working through a stutter that was
-              holding me back professionally. Toastmasters helped me overcome
-              that challenge, and now I&apos;m passionate about creating a
-              supportive space where others can face their own public speaking
-              fears and grow together. 😊
-            </p>
           </div>
         </section>
 
@@ -414,7 +423,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              Future Leaders Club
+              Club Name: Future Leaders
             </a>
           </div>
           <div className="text-sm">
