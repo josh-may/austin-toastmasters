@@ -215,9 +215,9 @@ export default function Home() {
           </nav>
         )}
         <section className="w-full mb-4 sm:mb-6">
-          <div className="border-gray-400 border p-4 sm:p-6 md:p-8 shadow-md">
+          <div className="border-gray-400 border p-4 sm:p-6 md:p-4 shadow-md">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mt-6 mb-6 sm:mb-10 text-gray-200">
-              Welcome to Austin Toastmasters 😎
+              Welcome to Austin Toastmasters 🙌
               <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center mt-4 sm:mt-5 text-green-500">
                 (Drop ins welcome)
               </p>
@@ -231,6 +231,10 @@ export default function Home() {
               MEETING INFO
             </h2>
             <p className="text-lg mb-4">
+              <strong className="text-gray-100">Time:</strong> Tuesdays, 6:30p -
+              7:30p
+            </p>
+            <p className="text-lg mb-4">
               <strong className="text-gray-100">Location:</strong>{" "}
               <a
                 href="https://maps.app.goo.gl/ThhuBkGMZZx9wyAB8"
@@ -240,10 +244,6 @@ export default function Home() {
               >
                 Civil Goat on Manor
               </a>
-            </p>
-            <p className="text-lg mb-4">
-              <strong className="text-gray-100">Time:</strong> Tuesday 6:30 pm -
-              7:30 pm
             </p>
             <p className="text-lg">
               <strong className="text-gray-100">Next Meeting:</strong>{" "}
@@ -296,6 +296,21 @@ export default function Home() {
             <p className="text-base sm:text-lg mb-4">
               Come check out our club!
             </p>
+
+            {/* Added Map */}
+            <div className="w-full overflow-hidden rounded-lg mt-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55107.37999387374!2d-97.76009523561324!3d30.316508486218854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5ff37e8ccc5%3A0x78059cc9e2e8a224!2sAustin%20Toastmasters!5e0!3m2!1sen!2sus!4v1735402606702!5m2!1sen!2sus"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Austin Toastmasters Location"
+                className="w-full"
+              />
+            </div>
           </div>
         </section>
 
@@ -386,56 +401,102 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <footer className="w-full py-3 text-center text-gray-400">
-          <div className="flex justify-center space-x-6 mb-4 mt-6">
+        <footer className="w-full py-8 text-center text-gray-400 border-t border-gray-800 mt-8">
+          {/* Social Links */}
+          <div className="flex justify-center space-x-8 mb-8">
             <a
               href="https://www.instagram.com/austin_toastmasters/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-400 hover:text-white transition-colors p-2"
               aria-label="Follow us on Instagram"
             >
-              <Instagram size={20} />
+              <Instagram size={24} />
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=61570084196984"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-400 hover:text-white transition-colors p-2"
               aria-label="Follow us on Facebook"
             >
-              <Facebook size={20} />
+              <Facebook size={24} />
             </a>
             <a
               href="https://x.com/atxtoastmasters"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-400 hover:text-white transition-colors p-2"
               aria-label="Follow us on X (Twitter)"
             >
-              <Twitter size={20} />
+              <Twitter size={24} />
             </a>
           </div>
-          <div className="text-sm mb-2">
-            <a
-              href="https://www.toastmasters.org/Find-a-Club/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              Club Name: Future Leaders
-            </a>
+
+          {/* Contact Information */}
+          <div className="max-w-2xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div className="space-y-3">
+              <h3 className="text-xl font-medium text-gray-200 mb-4">
+                Contact Us
+              </h3>
+              <div>
+                <a
+                  href="https://maps.app.goo.gl/ThhuBkGMZZx9wyAB8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors block"
+                >
+                  2610 Manor Rd Unit B
+                  <br />
+                  Austin, TX 78722
+                </a>
+              </div>
+              <div>
+                <a
+                  href="tel:774-275-4205"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  (774) 275-4205
+                </a>
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              <h3 className="text-xl font-medium text-gray-200 mb-4">
+                Club Info
+              </h3>
+              <div>
+                <a
+                  href="https://www.toastmasters.org/Find-a-Club/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Club Name: Speech Garage
+                </a>
+              </div>
+              <div>
+                <span className="block">Every Tuesday</span>
+                <span className="block">6:30 PM - 7:30 PM</span>
+              </div>
+            </div>
           </div>
-          <div className="text-sm">
-            Built by{" "}
-            <a
-              href="https://joshmmay.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              Josh May
-            </a>
+
+          {/* Copyright */}
+          <div className="text-sm text-gray-500 border-t border-gray-800 pt-6">
+            <p>
+              Built by{" "}
+              <a
+                href="https://joshmmay.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                Josh May
+              </a>
+              {" • "}
+              <span>© {new Date().getFullYear()} Austin Toastmasters</span>
+            </p>
           </div>
         </footer>
       </main>
