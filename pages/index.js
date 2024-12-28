@@ -402,37 +402,6 @@ export default function Home() {
           </div>
         </section>
         <footer className="w-full py-8 text-center text-gray-400 border-t border-gray-800 mt-8">
-          {/* Social Links */}
-          <div className="flex justify-center space-x-8 mb-8">
-            <a
-              href="https://www.instagram.com/austin_toastmasters/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors p-2"
-              aria-label="Follow us on Instagram"
-            >
-              <Instagram size={24} />
-            </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=61570084196984"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors p-2"
-              aria-label="Follow us on Facebook"
-            >
-              <Facebook size={24} />
-            </a>
-            <a
-              href="https://x.com/atxtoastmasters"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors p-2"
-              aria-label="Follow us on X (Twitter)"
-            >
-              <Twitter size={24} />
-            </a>
-          </div>
-
           {/* Contact Information */}
           <div className="max-w-2xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div className="space-y-3">
@@ -480,6 +449,38 @@ export default function Home() {
                 <span className="block">6:30 PM - 7:30 PM</span>
               </div>
             </div>
+          </div>
+
+          {/* Social Links - Moved here */}
+
+          <div className=" flex space-x-8 text-sm justify-center text-gray-500 border-t border-gray-800 py-6">
+            <a
+              href="https://www.instagram.com/austin_toastmasters/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors p-2"
+              aria-label="Follow us on Instagram"
+            >
+              <Instagram size={24} />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61570084196984"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors p-2"
+              aria-label="Follow us on Facebook"
+            >
+              <Facebook size={24} />
+            </a>
+            <a
+              href="https://x.com/atxtoastmasters"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors p-2"
+              aria-label="Follow us on X (Twitter)"
+            >
+              <Twitter size={24} />
+            </a>
           </div>
 
           {/* Copyright */}
