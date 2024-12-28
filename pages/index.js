@@ -390,7 +390,7 @@ export default function Home() {
         <section className="w-full">
           <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
-              FAQS
+              MORE FAQS
             </h2>
             {faqItems.map((item, index) => (
               <FAQItem
