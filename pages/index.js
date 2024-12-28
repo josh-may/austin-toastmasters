@@ -277,7 +277,7 @@ export default function Home() {
         <section id="about" className="w-full mb-4">
           <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
-              WHAT&apos;S THE STORY OF THIS CLUB?
+              Our Story
             </h2>
 
             <p className="text-base sm:text-lg mb-4">
