@@ -253,6 +253,16 @@ export default function Home() {
                 const daysUntilTuesday = (2 - today.getDay() + 7) % 7;
                 nextTuesday.setDate(today.getDate() + daysUntilTuesday);
 
+                // Check for snow day - January 16, 2024
+                const snowDay = new Date(2025, 0, 21);
+                if (
+                  nextTuesday.getFullYear() === snowDay.getFullYear() &&
+                  nextTuesday.getMonth() === snowDay.getMonth() &&
+                  nextTuesday.getDate() === snowDay.getDate()
+                ) {
+                  return "No meeting on January 21, 2024 due to snow day. See you next week!";
+                }
+
                 while (
                   (nextTuesday.getMonth() === 11 &&
                     nextTuesday.getDate() === 24) ||
