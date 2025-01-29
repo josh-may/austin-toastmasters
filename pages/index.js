@@ -428,7 +428,7 @@ export default function Home() {
                   href="tel:774-275-4205"
                   className="text-gray-400 hover:text-white"
                 >
-                  (774) 275-4205
+                  (774) 275-4205 (Please Text)
                 </a>
               </div>
 
