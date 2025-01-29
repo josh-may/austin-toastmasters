@@ -100,17 +100,17 @@ export default function Home() {
         <title>Austin Toastmasters - Improve Your Public Speaking Skills</title>
         <meta
           name="description"
-          content="Join Austin Toastmasters at ATX Speech Garage to enhance your public speaking and leadership skills. Weekly meetings in East Austin. Drop-ins welcome!"
+          content="Join Austin Toastmasters to enhance your public speaking and leadership skills. Weekly meetings in East Austin. Drop-ins welcome!"
         />
         <link rel="icon" href="/favicon.ico" />
 
         <meta
           property="og:title"
-          content="Austin Toastmasters - Improve Public Speaking Skills | ATX Speech Garage"
+          content="Austin Toastmasters - Improve Public Speaking Skills"
         />
         <meta
           property="og:description"
-          content="Join Austin Toastmasters at ATX Speech Garage to enhance your public speaking and leadership skills. Weekly meetings in East Austin. Drop-ins welcome!"
+          content="Join Austin Toastmasters to enhance your public speaking and leadership skills. Weekly meetings in East Austin. Drop-ins welcome!"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://austintoastmasters.com" />
@@ -451,7 +451,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Club Name: Speech Garage
+                  Club Name: Penguin Philosophers
                 </a>
               </div>
               <div>
