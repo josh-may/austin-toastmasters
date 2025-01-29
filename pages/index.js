@@ -231,9 +231,30 @@ export default function Home() {
               MEETING INFO
             </h2>
             <p className="text-lg mb-4">
-              <strong className="text-gray-100">Time:</strong> Tuesdays, 6:30p -
-              7:30p
+              <strong className="text-gray-100">Next Meeting:</strong>{" "}
+              {(() => {
+                const today = new Date();
+                const nextTuesday = new Date();
+                const daysUntilTuesday = (2 - today.getDay() + 7) % 7;
+                nextTuesday.setDate(today.getDate() + daysUntilTuesday);
+
+                while (
+                  (nextTuesday.getMonth() === 11 &&
+                    nextTuesday.getDate() === 24) ||
+                  (nextTuesday.getMonth() === 11 &&
+                    nextTuesday.getDate() === 31)
+                ) {
+                  nextTuesday.setDate(nextTuesday.getDate() + 7);
+                }
+
+                return `${nextTuesday.toLocaleDateString("en-US", {
+                  weekday: "long",
+                  month: "long",
+                  day: "numeric",
+                })} at 6:30 PM`;
+              })()}
             </p>
+
             <p className="text-lg mb-4">
               <strong className="text-gray-100">Location:</strong>{" "}
               <a
@@ -245,40 +266,10 @@ export default function Home() {
                 Civil Goat on Manor
               </a>
             </p>
-            <p className="text-lg">
-              <strong className="text-gray-100">Next Meeting:</strong>{" "}
-              {(() => {
-                const today = new Date();
-                const nextTuesday = new Date();
-                const daysUntilTuesday = (2 - today.getDay() + 7) % 7;
-                nextTuesday.setDate(today.getDate() + daysUntilTuesday);
 
-                // Check for snow day - January 16, 2024
-                const snowDay = new Date(2025, 0, 21);
-                if (
-                  nextTuesday.getFullYear() === snowDay.getFullYear() &&
-                  nextTuesday.getMonth() === snowDay.getMonth() &&
-                  nextTuesday.getDate() === snowDay.getDate()
-                ) {
-                  return "No meeting on January 21, 2024 due to snow day. See you next week!";
-                }
-
-                while (
-                  (nextTuesday.getMonth() === 11 &&
-                    nextTuesday.getDate() === 24) ||
-                  (nextTuesday.getMonth() === 11 &&
-                    nextTuesday.getDate() === 31)
-                ) {
-                  nextTuesday.setDate(nextTuesday.getDate() + 7);
-                }
-
-                return nextTuesday.toLocaleDateString("en-US", {
-                  weekday: "long",
-                  month: "long",
-                  day: "numeric",
-                  year: "numeric",
-                });
-              })()}
+            <p className="text-lg ">
+              <strong className="text-gray-100">Club Name:</strong> Penguin
+              Philosophers
             </p>
           </div>
         </section>
