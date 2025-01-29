@@ -121,7 +121,7 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center px-4 py-8 sm:py-8 w-full max-w-5xl mx-auto bg-black text-gray-200 min-w-[320px]">
-        <header className="w-full max-w-5xl mx-auto bg-black min-w-[320px] mb-4">
+        <header className="w-full max-w-5xl mx-auto bg-black min-w-[320px] mb-3">
           <div className="border-gray-400 border p-4 flex justify-between items-center">
             <div className="flex items-center">
               <Link href="/" className="text-white text-xl font-semibold">
@@ -214,7 +214,7 @@ export default function Home() {
             </div>
           </nav>
         )}
-        <section className="w-full mb-4 sm:mb-6">
+        <section className="w-full mb-4 sm:mb-3">
           <div className="border-gray-400 border p-4 sm:p-6 md:p-4 shadow-md">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mt-6 mb-6 sm:mb-10 text-gray-200">
               Welcome to Austin Toastmasters 🙌
@@ -225,7 +225,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="meeting-info" className="w-full mb-4">
+        <section id="meeting-info" className="w-full mb-3">
           <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
               MEETING INFO
@@ -284,7 +284,7 @@ export default function Home() {
         </section>
 
         {/* Group Story section */}
-        <section id="about" className="w-full mb-4">
+        <section id="about" className="w-full mb-3">
           <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
               Our Story
@@ -325,7 +325,7 @@ export default function Home() {
         </section>
 
         {/* New What is Toastmasters section */}
-        <section className="w-full mb-4">
+        <section className="w-full mb-3">
           <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
               WHAT IS TOASTMASTERS?
@@ -353,7 +353,7 @@ export default function Home() {
         </section>
 
         {/* How are meetings run section */}
-        <section className="w-full mb-4">
+        <section className="w-full mb-3">
           <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
               HOW ARE MEETINGS RUN?
@@ -411,103 +411,95 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <footer className="w-full py-8 text-center text-gray-400 border-t border-gray-800 mt-8">
-          {/* Contact Information */}
-          <div className="max-w-2xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            <div className="space-y-3">
-              <h3 className="text-xl font-medium text-gray-200 mb-4">
-                Contact Us
-              </h3>
-              <div>
+
+        <footer className="w-full mt-3">
+          <div className="border-gray-400 border p-6 shadow-md">
+            <div className="flex flex-col items-center space-y-6">
+              {/* Contact Info */}
+              <div className="text-center">
+                <h3 className="text-xl font-medium text-gray-200 mb-2">
+                  Get in Touch
+                </h3>
                 <a
-                  href="https://maps.app.goo.gl/ThhuBkGMZZx9wyAB8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors block"
+                  href="mailto:tm@joshmmay.com"
+                  className="text-gray-400 hover:text-white block"
                 >
-                  2610 Manor Rd Unit B
-                  <br />
-                  Austin, TX 78722
+                  tm@joshmmay.com
                 </a>
-              </div>
-              <div>
                 <a
                   href="tel:774-275-4205"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 hover:text-white"
                 >
                   (774) 275-4205
                 </a>
               </div>
-            </div>
 
-            <div className="space-y-3">
-              <h3 className="text-xl font-medium text-gray-200 mb-4">
-                Club Info
-              </h3>
-              <div>
+              {/* Location */}
+              <div className="text-center">
+                <h3 className="text-xl font-medium text-gray-200 mb-2">
+                  Visit Us
+                </h3>
+                <p className="text-gray-400">
+                  Every Tuesday, 6:30 PM - 7:30 PM
+                </p>
                 <a
-                  href="https://www.toastmasters.org/Find-a-Club/"
+                  href="https://maps.app.goo.gl/ThhuBkGMZZx9wyAB8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 hover:text-white"
                 >
-                  Club Name: Penguin Philosophers
+                  2610 Manor Rd Unit B, Austin, TX 78722
                 </a>
               </div>
-              <div>
-                <span className="block">Every Tuesday</span>
-                <span className="block">6:30 PM - 7:30 PM</span>
+
+              {/* Social Links */}
+              <div className="flex space-x-6 pt-4 border-t border-gray-800 w-full justify-center">
+                <a
+                  href="https://www.instagram.com/austin_toastmasters/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white"
+                  aria-label="Instagram"
+                >
+                  <Instagram size={20} />
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61570084196984"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white"
+                  aria-label="Facebook"
+                >
+                  <Facebook size={20} />
+                </a>
+                <a
+                  href="https://x.com/atxtoastmasters"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white"
+                  aria-label="X (Twitter)"
+                >
+                  <Twitter size={20} />
+                </a>
+              </div>
+
+              {/* Copyright */}
+              <div className="text-sm text-gray-500">
+                <p>
+                  Built by{" "}
+                  <a
+                    href="https://joshmmay.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white"
+                  >
+                    Josh May
+                  </a>
+                  {" • "}
+                  <span>© {new Date().getFullYear()} Austin Toastmasters</span>
+                </p>
               </div>
             </div>
-          </div>
-
-          {/* Social Links - Moved here */}
-
-          <div className=" flex space-x-8 text-sm justify-center text-gray-500 border-t border-gray-800 py-6">
-            <a
-              href="https://www.instagram.com/austin_toastmasters/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors p-2"
-              aria-label="Follow us on Instagram"
-            >
-              <Instagram size={24} />
-            </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=61570084196984"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors p-2"
-              aria-label="Follow us on Facebook"
-            >
-              <Facebook size={24} />
-            </a>
-            <a
-              href="https://x.com/atxtoastmasters"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors p-2"
-              aria-label="Follow us on X (Twitter)"
-            >
-              <Twitter size={24} />
-            </a>
-          </div>
-
-          {/* Copyright */}
-          <div className="text-sm text-gray-500 border-t border-gray-800 pt-6">
-            <p>
-              Built by{" "}
-              <a
-                href="https://joshmmay.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                Josh May
-              </a>
-              {" • "}
-              <span>© {new Date().getFullYear()} Austin Toastmasters</span>
-            </p>
           </div>
         </footer>
       </main>
