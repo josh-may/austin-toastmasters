@@ -1,40 +1,90 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Austin Toastmasters Website 🎤
 
-## Getting Started
+A modern, responsive website for Austin Toastmasters club, built with Next.js and Tailwind CSS. The site helps potential members learn about our public speaking club and provides essential information about meetings and membership.
 
-First, run the development server:
+## 🌟 Features
+
+- **Mobile-Responsive Design**: Fully optimized for all device sizes
+- **Modern UI/UX**: Clean, accessible interface with dark mode
+- **Dynamic Content**: Auto-updating meeting dates and interactive FAQ section
+- **SEO Optimized**: Meta tags and structured content for better search visibility
+- **Fast Loading**: Optimized performance with Next.js
+- **Interactive Elements**: Modal dialogs and mobile menu
+- **Social Media Integration**: Links to Instagram, Facebook, and X (Twitter)
+
+## 🛠️ Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework for production
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Lucide React](https://lucide.dev/) - Beautiful & consistent icons
+- React Hooks for state management
+- SEO best practices implementation
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/josh-may/austin-toastmasters
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 📱 Key Pages
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- **Home**: Introduction and welcome message
+- **Meeting Info**: Times, location, and club details
+- **About**: Club history and mission
+- **FAQ**: Comprehensive information for potential members
+- **Contact**: Multiple ways to get in touch
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 🎯 SEO Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Optimized meta tags
+- Semantic HTML structure
+- Mobile-first design
+- Fast loading times
+- Social media meta tags
+- Structured data implementation
 
-## Learn More
+## 📝 Content Sections
 
-To learn more about Next.js, take a look at the following resources:
+- Welcome message
+- Meeting information
+- Club story
+- What is Toastmasters?
+- How meetings are run
+- Frequently Asked Questions
+- Contact information
+- Social media links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-## Deploy on Vercel
+## 🔗 Links
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Live Website](https://austintoastmasters.com)
+- [Facebook](https://www.facebook.com/profile.php?id=61570084196984)
+- [Instagram](https://www.instagram.com/austin_toastmasters/)
+- [X (Twitter)](https://x.com/atxtoastmasters)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+Built with ❤️ by [Josh May](https://joshmmay.com)
