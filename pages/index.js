@@ -234,24 +234,24 @@ export default function Home() {
               <strong className="text-gray-100">Next Meeting:</strong>{" "}
               {(() => {
                 const today = new Date();
-                const nextTuesday = new Date();
-                const daysUntilTuesday = (2 - today.getDay() + 7) % 7;
-                nextTuesday.setDate(today.getDate() + daysUntilTuesday);
+                const nextSaturday = new Date();
+                const daysUntilSaturday = (6 - today.getDay() + 7) % 7;
+                nextSaturday.setDate(today.getDate() + daysUntilSaturday);
 
                 while (
-                  (nextTuesday.getMonth() === 11 &&
-                    nextTuesday.getDate() === 24) ||
-                  (nextTuesday.getMonth() === 11 &&
-                    nextTuesday.getDate() === 31)
+                  (nextSaturday.getMonth() === 11 &&
+                    nextSaturday.getDate() === 24) ||
+                  (nextSaturday.getMonth() === 11 &&
+                    nextSaturday.getDate() === 31)
                 ) {
-                  nextTuesday.setDate(nextTuesday.getDate() + 7);
+                  nextSaturday.setDate(nextSaturday.getDate() + 7);
                 }
 
-                return `${nextTuesday.toLocaleDateString("en-US", {
+                return `${nextSaturday.toLocaleDateString("en-US", {
                   weekday: "long",
                   month: "long",
                   day: "numeric",
-                })} at 6:30 PM`;
+                })} at 11:30 AM`;
               })()}
             </p>
 
@@ -438,7 +438,7 @@ export default function Home() {
                   Visit Us
                 </h3>
                 <p className="text-gray-400">
-                  Every Tuesday, 6:30 PM - 7:30 PM
+                  Every Saturday, 11:30 AM - 12:30 PM
                 </p>
                 <a
                   href="https://maps.app.goo.gl/ThhuBkGMZZx9wyAB8"
