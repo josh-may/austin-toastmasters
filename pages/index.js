@@ -268,7 +268,7 @@ export default function Home() {
             </p>
 
             <p className="text-lg ">
-              <strong className="text-gray-100">Club Name:</strong>{" "}
+              <strong className="text-gray-100">Club:</strong>{" "}
               <a
                 href="https://www.toastmasters.org/find-a-club?q=Austin%2C+Texas%2C+United+States&radius=25&n=&advanced=0&latitude=30.265&longitude=-97.7466&autocomplete=true&zoom=0"
                 target="_blank"
