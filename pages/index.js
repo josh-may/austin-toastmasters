@@ -275,7 +275,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
-                Penguin Philosophers
+                Penguin People
               </a>
             </p>
           </div>
