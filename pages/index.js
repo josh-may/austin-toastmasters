@@ -263,7 +263,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
-                Civil Goat on Manor
+                Platform Apt. on MLK Jr.
               </a>
             </p>
 
@@ -446,7 +446,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white"
                 >
-                  2610 Manor Rd Unit B, Austin, TX 78722
+                  Platform Apt. on MLK Jr.
                 </a>
               </div>
 
