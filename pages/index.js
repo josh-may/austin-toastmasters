@@ -231,28 +231,8 @@ export default function Home() {
               MEETING INFO
             </h2>
             <p className="text-lg mb-4">
-              <strong className="text-gray-100">Next Meeting:</strong>{" "}
-              {(() => {
-                const today = new Date();
-                const nextSaturday = new Date();
-                const daysUntilSaturday = (6 - today.getDay() + 7) % 7;
-                nextSaturday.setDate(today.getDate() + daysUntilSaturday);
-
-                while (
-                  (nextSaturday.getMonth() === 11 &&
-                    nextSaturday.getDate() === 24) ||
-                  (nextSaturday.getMonth() === 11 &&
-                    nextSaturday.getDate() === 31)
-                ) {
-                  nextSaturday.setDate(nextSaturday.getDate() + 7);
-                }
-
-                return `${nextSaturday.toLocaleDateString("en-US", {
-                  weekday: "long",
-                  month: "long",
-                  day: "numeric",
-                })} at 11:30 AM`;
-              })()}
+              <strong className="text-gray-100">Next Meeting:</strong> TBA (To
+              Be Announced)
             </p>
 
             <p className="text-lg mb-4">
@@ -437,9 +417,7 @@ export default function Home() {
                 <h3 className="text-xl font-medium text-gray-200 mb-2">
                   Visit Us
                 </h3>
-                <p className="text-gray-400">
-                  Every Saturday, 11:30 AM - 12:30 PM
-                </p>
+                <p className="text-gray-400">Meeting schedule: TBA</p>
                 <a
                   href="https://maps.app.goo.gl/ThhuBkGMZZx9wyAB8"
                   target="_blank"
