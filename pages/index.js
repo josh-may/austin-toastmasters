@@ -231,32 +231,41 @@ export default function Home() {
               MEETING INFO
             </h2>
             <p className="text-lg mb-4">
-              <strong className="text-gray-100">Next Meeting:</strong> TBA (To
-              Be Announced)
+              <strong className="text-gray-100">Next Meeting:</strong> Every
+              Thursday morning 7:00-8:15 CDT
             </p>
 
             <p className="text-lg mb-4">
               <strong className="text-gray-100">Location:</strong>{" "}
               <a
-                href="https://maps.app.goo.gl/ThhuBkGMZZx9wyAB8"
+                href="https://maps.app.goo.gl/wTFRw9W28z31cqGX7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
-                Platform Apt. on MLK Jr.
+                IHOP restaurant, 707 E Cesar Chavez St, Austin, TX 78701
               </a>
             </p>
 
             <p className="text-lg ">
               <strong className="text-gray-100">Club:</strong>{" "}
               <a
-                href="https://www.toastmasters.org/find-a-club?q=Austin%2C+Texas%2C+United+States&radius=25&n=&advanced=0&latitude=30.265&longitude=-97.7466&autocomplete=true&zoom=0"
+                href="https://www.toastmasters.org/find-a-club?q=West+Austin+II"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
-                Penguin People
+                West Austin II
               </a>
+            </p>
+            <p className="text-lg mt-4 text-gray-300">
+              <em>
+                What&apos;s that you say? That IHOP isn&apos;t in West Austin?
+                You&apos;re right! Our former location in West Austin closed
+                after 30 years of meeting there. Now, the &quot;West&quot; in
+                &quot;West Austin II,&quot; refers to &quot;west of I-35&quot;.
+                Our club was chartered in 1986, and we honor the name.
+              </em>
             </p>
           </div>
         </section>
@@ -269,20 +278,27 @@ export default function Home() {
             </h2>
 
             <p className="text-base sm:text-lg mb-4">
-              Hey, Josh May here :). I started this club in August, 2024. I
-              noticed a gap in the East Austin area for public speaking and
-              wanted to address that.
+              Welcome to West Austin II Toastmasters Club - &quot;Second to
+              None&quot;! Chartered in 1986, our club has a rich history of
+              helping members develop their public speaking and leadership
+              skills.
             </p>
 
             <p className="text-base sm:text-lg mb-4">
-              I frist stared Toastmasters in 2018 to work through a stutter I
-              had that was limiting me professionaly. Doing toastmasters helped
-              me overcome that challenge, and now I&apos;m passionate about
-              creating a supportive space where others can face their own public
-              speaking fears and grow together. 😊
+              We come together to improve our public speaking, presentation, and
+              leadership skills by, as our founder Ralph Smedley said,
+              &quot;learning through moments of enjoyment.&quot;
             </p>
+
             <p className="text-base sm:text-lg mb-4">
-              Come check out our club!
+              Our club features experienced members like Chad Goldwasser, a
+              Realtor and Professional Speaker who enjoys sharing life stories.
+              We welcome guests and new members to join our supportive
+              community!
+            </p>
+
+            <p className="text-base sm:text-lg mb-4">
+              Come wake up with West Austin II every Thursday morning!
             </p>
 
             {/* Added Map */}
@@ -399,16 +415,16 @@ export default function Home() {
                   Get in Touch
                 </h3>
                 <a
-                  href="mailto:tm@joshmmay.com"
+                  href="mailto:dennisshall@gmail.com"
                   className="text-gray-400 hover:text-white block"
                 >
-                  tm@joshmmay.com
+                  dennisshall@gmail.com
                 </a>
                 <a
-                  href="tel:774-275-4205"
+                  href="tel:512-905-5600"
                   className="text-gray-400 hover:text-white"
                 >
-                  (774) 275-4205 (Please Text)
+                  (512) 905-5600 (Call or Text)
                 </a>
               </div>
 
@@ -417,14 +433,16 @@ export default function Home() {
                 <h3 className="text-xl font-medium text-gray-200 mb-2">
                   Visit Us
                 </h3>
-                <p className="text-gray-400">Meeting schedule: TBA</p>
+                <p className="text-gray-400">
+                  Every Thursday morning 7:00-8:15 CDT
+                </p>
                 <a
-                  href="https://maps.app.goo.gl/ThhuBkGMZZx9wyAB8"
+                  href="https://maps.app.goo.gl/wTFRw9W28z31cqGX7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white"
                 >
-                  Platform Apt. on MLK Jr.
+                  IHOP restaurant, 707 E Cesar Chavez St, Austin, TX 78701
                 </a>
               </div>
 
@@ -460,7 +478,7 @@ export default function Home() {
               </div>
 
               {/* Copyright */}
-              <div className="text-sm text-gray-500">
+              {/* <div className="text-sm text-gray-500">
                 <p>
                   Built by{" "}
                   <a
@@ -474,7 +492,7 @@ export default function Home() {
                   {" • "}
                   <span>© {new Date().getFullYear()} Austin Toastmasters</span>
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </footer>
