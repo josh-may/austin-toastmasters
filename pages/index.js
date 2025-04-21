@@ -125,7 +125,7 @@ export default function Home() {
           <div className="border-gray-400 border p-4 flex justify-between items-center">
             <div className="flex items-center">
               <Link href="/" className="text-white text-xl font-semibold">
-                Austin Toastmasters
+                West Austin II
               </Link>
             </div>
             <nav className="hidden md:block text-xl">
