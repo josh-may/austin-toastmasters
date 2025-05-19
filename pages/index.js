@@ -38,7 +38,7 @@ export default function Home() {
     {
       question: "What is a typical toastmasters meeting?",
       answer:
-        "Time is important so please always arrive on time before 6:30pm. The daily agenda will be passed out on the tables. You will also find a blank form where you can provide feedback to the speakers. We encourage guests to provide feedback to all speakers! The Toastmaster runs the show and will go over the other key roles that make this club great. There will be 3-4 prepared speeches, table topics, 3-4 evaluators.",
+        "Time is important so please always arrive on time before 6:15pm. The daily agenda will be passed out on the tables. You will also find a blank form where you can provide feedback to the speakers. We encourage guests to provide feedback to all speakers! The Toastmaster runs the show and will go over the other key roles that make this club great. There will be 3-4 prepared speeches, table topics, 3-4 evaluators.",
     },
     {
       question: "How do I become a member?",
@@ -55,7 +55,8 @@ export default function Home() {
     },
     {
       question: "Where do you meet?",
-      answer: "In person.",
+      answer:
+        "LCRA Headquarters - Redbud Center, 3601 Lake Austin Blvd, Austin, TX 78703. We are located in the downstairs conference room.",
     },
     {
       question: "Is everyone in your club a good speaker?",
@@ -97,20 +98,23 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Austin Toastmasters - Improve Your Public Speaking Skills</title>
+        <title>
+          Austin Toastmasters - The Greatest Toastmasters Club in the Known
+          Universe!
+        </title>
         <meta
           name="description"
-          content="Join Austin Toastmasters to enhance your public speaking and leadership skills. Weekly meetings in East Austin. Drop-ins welcome!"
+          content="Join Austin Toastmasters to enhance your public speaking and leadership skills. Weekly meetings in Austin. Drop-ins welcome!"
         />
         <link rel="icon" href="/favicon.ico" />
 
         <meta
           property="og:title"
-          content="Austin Toastmasters - Improve Public Speaking Skills"
+          content="Austin Toastmasters - The Greatest Toastmasters Club in the Known Universe!"
         />
         <meta
           property="og:description"
-          content="Join Austin Toastmasters to enhance your public speaking and leadership skills. Weekly meetings in East Austin. Drop-ins welcome!"
+          content="Join Austin Toastmasters to enhance your public speaking and leadership skills. Weekly meetings in Austin. Drop-ins welcome!"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://austintoastmasters.com" />
@@ -125,7 +129,7 @@ export default function Home() {
           <div className="border-gray-400 border p-4 flex justify-between items-center">
             <div className="flex items-center">
               <Link href="/" className="text-white text-xl font-semibold">
-                West Austin II
+                Austin Toastmasters
               </Link>
             </div>
             <nav className="hidden md:block text-xl">
@@ -144,6 +148,14 @@ export default function Home() {
                     className="text-white hover:text-gray-300 transition-colors"
                   >
                     About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#how-to-join"
+                    className="text-white hover:text-gray-300 transition-colors"
+                  >
+                    Join Us
                   </a>
                 </li>
                 <li>
@@ -203,6 +215,14 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
+                  <a
+                    href="#how-to-join"
+                    className="text-white hover:text-gray-300 transition-colors"
+                  >
+                    Join Us
+                  </a>
+                </li>
+                <li>
                   <button
                     onClick={() => setIsModalOpen(true)}
                     className="text-white hover:text-gray-300 transition-colors cursor-pointer"
@@ -217,11 +237,14 @@ export default function Home() {
         <section className="w-full mb-4 sm:mb-3">
           <div className="border-gray-400 border p-4 sm:p-6 md:p-4 shadow-md">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mt-6 mb-6 sm:mb-10 text-gray-200">
-              Welcome to Austin Toastmasters 🙌
+              Austin Toastmasters 🙌
               <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center mt-4 sm:mt-5 text-green-500">
-                (Drop ins welcome)
+                The Greatest Toastmasters Club in the Known Universe!
               </p>
             </h1>
+            <p className="text-xl text-center text-gray-300 mb-6">
+              Guests are welcome to drop in and attend meetings without notice
+            </p>
           </div>
         </section>
 
@@ -231,41 +254,27 @@ export default function Home() {
               MEETING INFO
             </h2>
             <p className="text-lg mb-4">
-              <strong className="text-gray-100">Next Meeting:</strong> Every
-              Thursday morning 7:00-8:15 CDT
+              <strong className="text-gray-100">Meeting Time:</strong> Every
+              Tuesday from 6:15 PM - 8:00 PM CST
             </p>
 
             <p className="text-lg mb-4">
               <strong className="text-gray-100">Location:</strong>{" "}
               <a
-                href="https://maps.app.goo.gl/wTFRw9W28z31cqGX7"
+                href="https://maps.app.goo.gl/EtnnrLAn225SfzKJ7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
-                IHOP restaurant, 707 E Cesar Chavez St, Austin, TX 78701
+                LCRA Headquarters - Redbud Center, 3601 Lake Austin Blvd,
+                Austin, TX 78703
               </a>
             </p>
 
-            <p className="text-lg ">
-              <strong className="text-gray-100">Club:</strong>{" "}
-              <a
-                href="https://www.toastmasters.org/find-a-club?q=West+Austin+II"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 underline"
-              >
-                West Austin II
-              </a>
-            </p>
-            <p className="text-lg mt-4 text-gray-300">
-              <em>
-                What&apos;s that you say? That IHOP isn&apos;t in West Austin?
-                You&apos;re right! Our former location in West Austin closed
-                after 30 years of meeting there. Now, the &quot;West&quot; in
-                &quot;West Austin II,&quot; refers to &quot;west of I-35&quot;.
-                Our club was chartered in 1986, and we honor the name.
-              </em>
+            <p className="text-lg">
+              <strong className="text-gray-100">Meeting Room:</strong> We are
+              located in the downstairs conference room. Please check the
+              calendar for occasional location changes.
             </p>
           </div>
         </section>
@@ -278,27 +287,26 @@ export default function Home() {
             </h2>
 
             <p className="text-base sm:text-lg mb-4">
-              Welcome to West Austin II Toastmasters Club - &quot;Second to
-              None&quot;! Chartered in 1986, our club has a rich history of
-              helping members develop their public speaking and leadership
-              skills.
+              Welcome to Austin Toastmasters - The Greatest Toastmasters Club in
+              the Known Universe! We&apos;re dedicated to helping our members
+              develop their public speaking and leadership skills.
             </p>
 
             <p className="text-base sm:text-lg mb-4">
-              We come together to improve our public speaking, presentation, and
-              leadership skills by, as our founder Ralph Smedley said,
-              &quot;learning through moments of enjoyment.&quot;
+              We offer a wonderful opportunity to improve your communication and
+              leadership skills in a positive atmosphere with some of the most
+              amazing people in Austin.
             </p>
 
             <p className="text-base sm:text-lg mb-4">
-              Our club features experienced members like Chad Goldwasser, a
-              Realtor and Professional Speaker who enjoys sharing life stories.
-              We welcome guests and new members to join our supportive
-              community!
+              Visit our weekly Tuesday meetings to find out what Toastmasters is
+              about and what makes Austin Toastmasters unique! There is no
+              required RSVP and you are welcome to bring guests.
             </p>
 
             <p className="text-base sm:text-lg mb-4">
-              Come wake up with West Austin II every Thursday morning!
+              Membership is open to all who want to improve their public
+              speaking abilities and help others do the same.
             </p>
 
             {/* Added Map */}
@@ -318,7 +326,66 @@ export default function Home() {
           </div>
         </section>
 
-        {/* New What is Toastmasters section */}
+        {/* Add How to Join section */}
+        <section id="how-to-join" className="w-full mb-3">
+          <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
+              HOW TO JOIN
+            </h2>
+
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-100 mb-2">
+                  Step 1 - Attend a meeting
+                </h3>
+                <p className="text-base sm:text-lg text-gray-300">
+                  Join us every Tuesday! We start at 6:15pm sharp so please
+                  arrive on time. If you arrive late, you are still welcome to
+                  join! Please be respectful for all speakers if you arrive
+                  late. There are plenty of seats for you and your fellow
+                  guests. When you arrive to the Redbud Center, the meeting is
+                  located down the stairs.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-100 mb-2">
+                  Step 2 - Fill out an application
+                </h3>
+                <p className="text-base sm:text-lg text-gray-300">
+                  Prior to the meeting, the Vice President of Membership or the
+                  Sargent of Arms will warmly welcome you. The VP of Membership
+                  will provide a membership application and collect dues if you
+                  decide to sign up! You are always welcome back as a guest if
+                  you do not want to sign up.
+                </p>
+                <p className="text-base sm:text-lg text-gray-300 mt-2">
+                  <a
+                    href="#contact"
+                    className="text-blue-400 hover:text-blue-300 underline"
+                    onClick={() => setIsModalOpen(true)}
+                  >
+                    Contact us
+                  </a>{" "}
+                  for more information or to get a membership application.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-100 mb-2">
+                  Step 3 - Stay Connected
+                </h3>
+                <p className="text-base sm:text-lg text-gray-300">
+                  Sign up for your supporting role and 1st speech in Easy-Speak.
+                  Stay connected by joining our Facebook group and keeping in
+                  touch with Slack.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* What is Toastmasters section */}
         <section className="w-full mb-3">
           <div className="border-gray-400 border p-4 sm:p-6 shadow-md">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-gray-200">
@@ -415,16 +482,10 @@ export default function Home() {
                   Get in Touch
                 </h3>
                 <a
-                  href="mailto:dennisshall@gmail.com"
+                  href="mailto:austintoastmasters@gmail.com"
                   className="text-gray-400 hover:text-white block"
                 >
-                  dennisshall@gmail.com
-                </a>
-                <a
-                  href="tel:512-905-5600"
-                  className="text-gray-400 hover:text-white"
-                >
-                  (512) 905-5600 (Call or Text)
+                  austintoastmasters@gmail.com
                 </a>
               </div>
 
@@ -434,15 +495,39 @@ export default function Home() {
                   Visit Us
                 </h3>
                 <p className="text-gray-400">
-                  Every Thursday morning 7:00-8:15 CDT
+                  Every Tuesday from 6:15 PM - 8:00 PM CST
                 </p>
                 <a
-                  href="https://maps.app.goo.gl/wTFRw9W28z31cqGX7"
+                  href="https://maps.app.goo.gl/EtnnrLAn225SfzKJ7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white"
                 >
-                  IHOP restaurant, 707 E Cesar Chavez St, Austin, TX 78701
+                  LCRA Headquarters - Redbud Center, 3601 Lake Austin Blvd,
+                  Austin, TX 78703
+                </a>
+              </div>
+
+              {/* Links */}
+              <div className="text-center">
+                <h3 className="text-xl font-medium text-gray-200 mb-2">
+                  Links
+                </h3>
+                <a
+                  href="https://www.toastmasters.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white block"
+                >
+                  Toastmasters International
+                </a>
+                <a
+                  href="https://www.d55tm.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white block"
+                >
+                  Toastmasters District 55
                 </a>
               </div>
 
@@ -478,21 +563,9 @@ export default function Home() {
               </div>
 
               {/* Copyright */}
-              {/* <div className="text-sm text-gray-500">
-                <p>
-                  Built by{" "}
-                  <a
-                    href="https://joshmmay.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white"
-                  >
-                    Josh May
-                  </a>
-                  {" • "}
-                  <span>© {new Date().getFullYear()} Austin Toastmasters</span>
-                </p>
-              </div> */}
+              <div className="text-sm text-gray-500">
+                <p>© {new Date().getFullYear()} Austin Toastmasters</p>
+              </div>
             </div>
           </div>
         </footer>
@@ -512,20 +585,14 @@ export default function Home() {
             <p className="mb-4 sm:mb-8 text-gray-300 text-base sm:text-lg md:text-xl">
               Email:{" "}
               <a
-                href="mailto:hey@joshmmay.com"
+                href="mailto:austintoastmasters@gmail.com"
                 className="text-blue-400 hover:underline break-all"
               >
-                hey@joshmmay.com
+                austintoastmasters@gmail.com
               </a>
             </p>
             <p className="mb-4 sm:mb-8 text-gray-300 text-base sm:text-lg md:text-xl">
-              Phone (prefer text):{" "}
-              <a
-                href="tel:774-275-4205"
-                className="text-blue-400 hover:underline"
-              >
-                774-275-4205
-              </a>
+              We meet every Tuesday at 6:15pm at the LCRA Red Bud Center.
             </p>
           </div>
         </div>
