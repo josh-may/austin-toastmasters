@@ -310,7 +310,7 @@ export default function Home() {
             </p>
 
             {/* Added Map */}
-            <div className="w-full overflow-hidden rounded-lg mt-6">
+            {/* <div className="w-full overflow-hidden rounded-lg mt-6">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55107.37999387374!2d-97.76009523561324!3d30.316508486218854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5ff37e8ccc5%3A0x78059cc9e2e8a224!2sAustin%20Toastmasters!5e0!3m2!1sen!2sus!4v1735402606702!5m2!1sen!2sus"
                 width="100%"
@@ -322,7 +322,7 @@ export default function Home() {
                 title="Austin Toastmasters Location"
                 className="w-full"
               />
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -532,7 +532,7 @@ export default function Home() {
               </div>
 
               {/* Social Links */}
-              <div className="flex space-x-6 pt-4 border-t border-gray-800 w-full justify-center">
+              {/* <div className="flex space-x-6 pt-4 border-t border-gray-800 w-full justify-center">
                 <a
                   href="https://www.instagram.com/austin_toastmasters/"
                   target="_blank"
@@ -560,7 +560,7 @@ export default function Home() {
                 >
                   <Twitter size={20} />
                 </a>
-              </div>
+              </div> */}
 
               {/* Copyright */}
               <div className="text-sm text-gray-500">
