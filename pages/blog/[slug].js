@@ -115,21 +115,21 @@ export default function BlogPost({ post }) {
                   <div>
                     <p className="text-xs text-gray-400">Article by</p>
                     <a
-                      href="/author/josh"
+                      href="/author/alex"
                       className="text-gray-200 font-medium hover:text-indigo-400 transition duration-300"
                     >
-                      Josh May
+                      Alex Thompson
                     </a>
                   </div>
                 </div>
                 <p className="text-sm text-gray-400 mb-6">
-                  Hey I&apos;m Josh, one of the guys behind Austin Toastmasters.
+                  Hey I&apos;m Alex, one of the guys behind Austin Toastmasters.
                   I&apos;m passionate about technology, podcasting, and
                   storytelling.
                 </p>
                 <div className="flex space-x-4">
                   <a
-                    href="https://www.joshmmay.com/"
+                    href="https://www.alexthompson.dev/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Personal Website"
@@ -144,7 +144,7 @@ export default function BlogPost({ post }) {
                     </svg>
                   </a>
                   <a
-                    href="https://twitter.com/josh_m_may"
+                    href="https://twitter.com/alexthompsondev"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Twitter"
@@ -158,7 +158,7 @@ export default function BlogPost({ post }) {
                     </svg>
                   </a>
                   <a
-                    href="https://www.facebook.com/profile.php?id=100074158632697"
+                    href="https://www.facebook.com/alexthompsondev"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Facebook"
